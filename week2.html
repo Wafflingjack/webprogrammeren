@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<link href="css/style.css" type="text/css" rel="stylesheet" /> 
+		<script type="text/javascript">
+
+		function vergelijkWoorden(woord1, woord2){
+            var woord1 = prompt("Woord 1");
+            var woord2 = prompt("woord2");
+            
+            
+          if(woord1==woord2){
+              alert("is gelijk");
+          } else if (woord1 > woord2){
+            alert(woord2 + " is " + woord2.length + " letters langer dan " + woord1);
+            }
+            
+            else {
+            alert(woord1 + " is " + woord1.length + " letters langer dan " + woord2);
+            }
+        }
+            
+            
+		</script> 
+
+	</head>
+	<body>
+		<button onclick="vergelijkWoorden()">Vergelijk</button>
+      
+	</body>
+</html>

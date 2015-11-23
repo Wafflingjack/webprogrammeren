@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+	
+        <script type="text/javascript">
+            var accountUsername = "Hekman";
+            var accountPassword = "week2";
+            
+            
+            
+            function login(){
+                var username = document.getElementById('username').value;
+                var pass = document.getElementById('password').value;
+                
+                if(username == ""){
+                document.getElementById("message").innerHTML = "voer username in";
+                } else {
+                    if(pass == ""){
+                    document.getElementById("message").innerHTML = "voer wachtwoord in";
+                } else {
+                    if(username == accountUsername){
+                    document.getElementById("message").innerHTML = "ingelogd";
+                }
+         
+                
+            
+             } else {
+                    document.getElementById("message").innerHTML = "verkeerd ww";
+                 }
+            
+            
+            } else {
+                    document.getElementById("message").innerHTML = "verkeerd username";
+                 }
+               
+                           
+                           
+                          
+            
+		</script> 
+
+	</head>
+	<body>
+        <input type='text' id='getal1' value= ""/><br/>
+        <input type='text' id='getal2' value=""/><br/>
+		<button onclick="plus()">Hallo</button>
+        <p id='uitkomst'>...</p>
+      
+	</body>
+</html>
